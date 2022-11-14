@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small Steps Big Dreams Preschool</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+        });
+
+        function copyAddress() {
+          let text = "6960 Sylvania Petersburg Rd, Ottawa Lake, MI 49267";
+          navigator.clipboard.writeText(text);
+          document.getElementById("myTooltip").innerHTML = "Copied!";
+          }
+          function outFunc() {
+            document.getElementById("myTooltip").innerHTML = "Copy to clipboard";
+          }
+    </script>
+    <style>
+      /*body {
+      background-color: #E9EEF7;
+      opacity: 0.8;
+      background-image:  linear-gradient(30deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(150deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(30deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(150deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(60deg, #a1c7e277 25%, transparent 25.5%, transparent 75%, #a1c7e277 75%, #a1c7e277), linear-gradient(60deg, #a1c7e277 25%, transparent 25.5%, transparent 75%, #a1c7e277 75%, #a1c7e277);
+      background-size: 20px 35px;
+      background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+      } */
+      p {
+        color: #000000;
+      }
+      .box {
+        background: rgb(161,199,226);
+        background: linear-gradient(120deg, rgba(161,199,226,1) 0%, rgba(212,226,236,1) 100%);
+      }
+      .footer {
+        background-color: #dddddd;
+      }
+
+      .h3 {
+        font-family: 'Patrick Hand', cursive;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+ 
+    <section class="hero is-primary is-halfheight">
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item is-active"  href="index.html">
+                  Home
+                </a>
+                <a class="navbar-item" href="">
+                  Our Commitment
+                </a>
+                <a class="navbar-item" href="">
+                  Our Commitment
+                </a>
+                <a class="navbar-item" href="">
+                  Our Goals
+                </a>
+                <a class="navbar-item" href="">
+                  Our Program
+                </a>
+                <a class="navbar-item" href="">
+                  Communications
+                </a>
+                <a class="navbar-item" href="">
+                  Our Classroom
+                </a>
+                <a class="navbar-item" href="">
+                  Summer Camp
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <p class="title">
+            Small Steps, Big Dreams
+          </p>
+          <p class="subtitle">
+            A Christian Montesourri Preschool and Kindergarden
+          </p>
+        </div>
+      </div>
+    </section><br>
+
+    <div class="columns is-gapless">
+      <div class="column is-one-third">
+        <div class="container is-fluid">
+          <div class="box">
+            <img src="images/home-image.jpg" height="500" width="500" alt="The Small Steps Big Dreams classroom. Photo taken in 2011.">
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box">
+          <h2 class="title">We are located at:</h2>
+          <p>Crossroads Community Church</p>
+          <p>6960 Sylvania Petersburg</p>
+          <p>Ottawa Lake, MI 49267</p><br>
+          <div class="tooltip">
+            <button onclick="copyAddress()" onmouseout="outFunc()" class="button" id="copy">
+              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+              Copy address
+              </button>
+            </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container is-fluid">
+          <div class="box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.997955271622!2d-83.69872918448881!3d41.742136979233166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883c7d8d579a6175%3A0x37caea4e41d94da5!2sCrossroads%20Community%20Church!5e0!3m2!1sen!2sus!4v1668387772451!5m2!1sen!2sus" width="500" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Copyright © 2022 Small Steps...Big Dreams, LLC<br>
+          Last Modified: 13 November 2022<br>
+          Site created by <a href="https://gaminglizard9.github.io">Dawson Call</a></p>
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
