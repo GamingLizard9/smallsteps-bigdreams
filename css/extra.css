@@ -1,0 +1,59 @@
+/*body {
+      background-color: #E9EEF7;
+      opacity: 0.8;
+      background-image:  linear-gradient(30deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(150deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(30deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(150deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(60deg, #a1c7e277 25%, transparent 25.5%, transparent 75%, #a1c7e277 75%, #a1c7e277), linear-gradient(60deg, #a1c7e277 25%, transparent 25.5%, transparent 75%, #a1c7e277 75%, #a1c7e277);
+      background-size: 20px 35px;
+      background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+      }*/
+      p {
+        color: #000000;
+      }
+      .box {
+        background: rgb(161,199,226);
+        background: linear-gradient(120deg, rgba(161,199,226,1) 0%, rgba(212,226,236,1) 100%);
+      }
+      .footer {
+        background-color: #dddddd;
+      }
+
+      .h3 {
+        font-family: 'Patrick Hand', cursive;
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
