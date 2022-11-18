@@ -12,6 +12,12 @@
         background: rgb(161,199,226);
         background: linear-gradient(120deg, rgba(161,199,226,1) 0%, rgba(212,226,236,1) 100%);
       }
+
+      .box-purple {
+        background: rgb(179,160,226);
+        background: linear-gradient(120deg, rgba(179,160,226,1) 0%, rgba(212,205,231,1) 100%);
+      }
+
       .footer {
         background-color: #dddddd;
       }
