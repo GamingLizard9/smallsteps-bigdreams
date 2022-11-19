@@ -10,29 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        $navbarBurgers.forEach( el => {
-          el.addEventListener('click', () => {
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-          });
-        });
-        });
-
-          function copyPhone() {
-          let text = "734-637-4475";
-          navigator.clipboard.writeText(text);
-          document.getElementById("myTooltip").textContent = "Copied!";
-          }
-          function outFunc() {
-            document.getElementById("myTooltip").textContent = "Copy to clipboard";
-          }
-    </script>
+    <script type="text/javascript" src="../js/epic.js"></script>
   </head>
   <body>
  
@@ -44,13 +22,13 @@
               <div class="navbar-item">
                 <a class="subtitle is-family-monospace" href="../index.html"><strong>Small Steps, Big Dreams</strong></p>
               </div>
-              <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <a role="button" class="navbar-burger" data-target="navbarBasicExample" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
               </a>
             </div>
-            <div id="navbarMenuHeroC" class="navbar-menu">
+            <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
                 <a class="navbar-item"  href="../index.html">
                   Home
