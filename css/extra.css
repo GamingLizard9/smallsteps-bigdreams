@@ -1,10 +1,11 @@
-/*body {
-      background-color: #E9EEF7;
-      opacity: 0.8;
-      background-image:  linear-gradient(30deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(150deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(30deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(150deg, #a1c7e2 12%, transparent 12.5%, transparent 87%, #a1c7e2 87.5%, #a1c7e2), linear-gradient(60deg, #a1c7e277 25%, transparent 25.5%, transparent 75%, #a1c7e277 75%, #a1c7e277), linear-gradient(60deg, #a1c7e277 25%, transparent 25.5%, transparent 75%, #a1c7e277 75%, #a1c7e277);
-      background-size: 20px 35px;
-      background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
-      }*/
+body {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image:  linear-gradient(135deg, #f4f4f4 25%, transparent 25%), linear-gradient(225deg, #f4f4f4 25%, transparent 25%), linear-gradient(45deg, #f4f4f4 25%, transparent 25%), linear-gradient(315deg, #f4f4f4 25%, #ffffff 25%);
+  background-position:  14px 0, 14px 0, 0 0, 0 0;
+  background-size: 14px 14px;
+  background-repeat: repeat;}
+
       p {
         color: #000000;
       }
